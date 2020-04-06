@@ -1,5 +1,5 @@
-def prime?(n)
-  if n < 1
+def prime?(num)
+  if num < 1
     return false
   else
     n = 2
