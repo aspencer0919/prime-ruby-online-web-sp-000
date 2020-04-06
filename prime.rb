@@ -1,7 +1,10 @@
 num = []
 
-def prime?(num)
-  return false if num < 2
-
-  (2..n/2).none?{|i| n % i == 0}
+def prime?(n)
+  for d in 2..(n - 1)
+   if (n % d) == 0
+    return false
+   end
+  end
+  true
 end
