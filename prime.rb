@@ -1,10 +1,7 @@
 num = []
 
 def prime?(num)
- n = 2
- while n < num
-   return false if num % n == 0
-   n += 1
- end
- true
+  return false if num < 2
+
+  (2..n/2).none?{|i| n % i == 0}
 end
